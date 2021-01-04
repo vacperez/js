@@ -18,9 +18,11 @@
 <body>
     <p id="output"></p>
     <script>
+        // Accedemos a la hora
         const hora = new Date().getHours();
         let mensaje;
         let estilo;
+        // Dependiedo la hora, mostramos un mensaje y agregamos un estilo css
         if (hora < 13 ){
             mensaje = "Buenos días";
             estilo = "mañana";
@@ -28,7 +30,9 @@
             mensaje = "buenas tardes";
             estilo = "tarde";
         }
+        //Accedemos a la etiqueta donde motraremos el mensaje
         document.getElementById("output").innerHTML = mensaje;
+        // Agregmos estilos a la etiqueta body
         document.body.className = estilo;
     </script>
 </body>
